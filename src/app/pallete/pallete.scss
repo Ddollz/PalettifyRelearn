@@ -1,0 +1,166 @@
+.container {
+  display: flex;
+  height: 100vh;
+  flex: 1 1 0%;
+  justify-content: center;
+  align-items: center;
+  padding: 0 12rem;
+  color: var(--primary-text);
+}
+
+.divider {
+  border-left: 1px solid #dce9e4;
+  height: 500px;
+  width: 10px;
+}
+
+.pallete__card {
+  width: 80%;
+  height: 500px;
+}
+
+.triggerCopy {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.copy__Button {
+  text-align: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  color: var(--primary-text);
+  font-size: 1rem;
+  transition: all 0.1s linear;
+}
+
+.copy__Button:hover {
+  transform: translateY(-10px);
+}
+
+.card-row {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+  /* border: 1px solid var(--primary-text); */
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  width: 72px;
+  height: 72px;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.color-card {
+  position: relative;
+  width: 72px;
+  height: 72px;
+  cursor: pointer;
+}
+
+.ColorBlockCode {
+  position: absolute;
+  top: 100%;
+  padding-top: 8px;
+  padding-bottom: 16px;
+  transition: all 0.2s ease 0s;
+}
+
+.color-card:not(:hover) .ColorBlockCode {
+  opacity: 0;
+  transition: all 0.6s ease 0s;
+}
+
+.pallete__header {
+  text-align: center;
+}
+
+.pallete__list {
+  margin-left: 40px;
+  width: 30%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.text__head {
+  display: flex;
+  font-weight: bold;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.setting__wrapper {
+  margin: 10px 0;
+}
+
+
+@media screen and (max-width: 1400px) {
+  .App {
+    padding: 0 20rem;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .App {
+    padding: 0 25rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .App {
+    padding: 0 10rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .App {
+    padding: 0 0;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .pallete__list {
+    width: 100%;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .card-row {
+    margin: 0;
+    margin-top: 30px;
+  }
+
+  .triggerCopy {
+    margin-top: 10px;
+  }
+
+  .triggerCopy .copy__Button {
+    font-size: 1.4rem;
+  }
+}
+
+
+.copy__button {
+  background-color: transparent;
+  border: none;
+  color: var(--primary-text);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  transition: all .1s linear;
+}

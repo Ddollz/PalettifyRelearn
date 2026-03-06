@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&display=swap');
+
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'Cousine', monospace;
+}
+
+:root {
+  --primary-text: #4d0024;
+}
+.footer {
+  /* position: absolute;
+  bottom: 1rem;
+  left: 2rem; */
+  padding: 40px 80px;
+  color: var(--primary-text);
+}
+
+.footer a {
+  color: inherit;
+  text-underline-position: under;
+  text-decoration-color: var(--primary-text);
+}
+
+.footer h1 {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration-color: var(--primary-text);
+}
